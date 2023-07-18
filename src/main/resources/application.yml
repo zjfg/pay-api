@@ -1,0 +1,23 @@
+server:
+  port: 20000
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+#支付商户配置
+pay:
+#  APPID由微信生成的应用ID
+  appid: ''
+# 直连商户的商户号
+  mchid: ''
+#  商户API私钥路径
+  privateFilePath: ''
+#  商户证书序列号
+  privateFileSn: ''
+#  商户APIV3密钥
+  apiPrivate: ''
+# 支付申请回调地址,服务器地址+/pay_apply_call_back/v1/call_back
+  payNotifyUrl: ''
+# 退款申请回调地址,服务器地址+/refund_wechat_pay/v1/call_back
+  refundNotifyUrl: ''
